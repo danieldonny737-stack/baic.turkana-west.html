@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turkana West Connect | Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0f766e">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">Turkana West <span>Connect</span></a>
+            <div class="nav-actions">
+                <nav class="desktop-nav" aria-label="Main navigation">
+                    <a href="community.html">Community</a>
+                    <a href="report.html">Reports</a>
+                    <a href="opportunities.html">Opportunities</a>
+                    <a href="organizations.html">Organizations</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="container section">
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">SERVICES</span>
+                    <h2>Support and Essential Services</h2>
+                </div>
+                <a href="index.html" class="outline-btn">Home</a>
+            </div>
+
+            <div class="services-grid service-category-grid">
+                <div class="service-card service-category-card service-health-card">
+                    <span class="service-category-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 3h6a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h2V5a2 2 0 0 1 2-2Z"/>
+                            <path d="M7 7h10M12 10v7m-3.5-3.5h7"/>
+                        </svg>
+                    </span>
+                    <h3>Health Care</h3>
+                    <p>Find mapped clinics and health centres in Kakuma, Kalobeyei, and nearby communities. Confirm services and opening hours with the facility before travelling.</p>
+                    <a href="#service-map" class="outline-btn">View health facilities</a>
+                </div>
+
+                <div class="service-card service-category-card service-water-card">
+                    <span class="service-category-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 3s7 7.2 7 12a7 7 0 0 1-14 0c0-4.8 7-12 7-12Z"/>
+                            <path d="M9 16a3 3 0 0 0 3 3"/>
+                        </svg>
+                    </span>
+                    <h3>Water & Sanitation</h3>
+                    <p>See mapped water pans and points used by local communities and livestock. Availability and water quality are not verified; report water problems to the community.</p>
+                    <a href="#service-map" class="outline-btn">View water locations</a>
+                </div>
+
+                <div class="service-card service-category-card service-education-card">
+                    <span class="service-category-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 7v14m0-14C10.5 5.7 8.5 5 6 5a3 3 0 0 0-3 3v10a3 3 0 0 1 3-3c2.5 0 4.5.7 6 2m0-10c1.5-1.3 3.5-2 6-2a3 3 0 0 1 3 3v10a3 3 0 0 0-3-3c-2.5 0-4.5.7-6 2"/>
+                        </svg>
+                    </span>
+                    <h3>Education</h3>
+                    <p>Explore mapped schools in Turkana West. JRS supports education in Kakuma; contact the school or JRS to confirm enrolment, services, and current availability.</p>
+                    <a href="#service-map" class="outline-btn">View mapped schools</a>
+                </div>
+
+                <div class="service-card service-category-card service-community-card">
+                    <span class="service-category-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="8" r="3"/>
+                            <path d="M3 20v-1a6 6 0 0 1 12 0v1Zm12-9a3 3 0 1 0 0-6m1 9a5 5 0 0 1 5 5v1h-3"/>
+                        </svg>
+                    </span>
+                    <h3>Community Support</h3>
+                    <p>Find local support organizations. RCK works on refugee rights and well-being; NRC and JRS also support displaced people and host communities in Kenya.</p>
+                    <a href="organizations.html" class="outline-btn">View support organizations</a>
+                </div>
+            </div>
+            <section class="service-map-section" aria-labelledby="service-map-heading">
+                <div class="section-heading">
+                    <div>
+                        <span class="section-label">TURKANA WEST</span>
+                        <h2 id="service-map-heading">Health, Water, Schools &amp; Community Services</h2>
+                    </div>
+                </div>
+
+                <p class="service-map-note">
+                    These mapped locations in Turkana West cover areas used by host and refugee communities;
+                    the map does not determine who is eligible to use a service. Data may be incomplete or out
+                    of date. Water pans, boreholes, and livestock watering points may support local grazing,
+                    but are not confirmed to be operational or safe for drinking. Verify access, availability,
+                    and water quality locally before travelling.
+                </p>
+
+                <div class="service-map-controls" aria-label="Map filters">
+                    <label><input type="checkbox" id="show-health" checked> Health facilities</label>
+                    <label><input type="checkbox" id="show-water" checked> Water pans, boreholes &amp; livestock points</label>
+                    <label><input type="checkbox" id="show-schools" checked> Schools</label>
+                    <label><input type="checkbox" id="show-training" checked> Training centres</label>
+                    <label><input type="checkbox" id="show-organizations" checked> NGOs &amp; community organizations</label>
+                    <button class="outline-btn" id="refresh-service-map" type="button">Refresh map data</button>
+                </div>
+                <p class="service-map-legend"><span class="service-map-marker service-map-marker-health">H</span> Health facility <span class="service-map-marker service-map-marker-water">P</span> Water pan <span class="service-map-marker service-map-marker-borehole">B</span> Borehole / well <span class="service-map-marker service-map-marker-livestock">L</span> Livestock watering point <span class="service-map-marker service-map-marker-school">S</span> School <span class="service-map-marker service-map-marker-training">T</span> Training centre <span class="service-map-marker service-map-marker-organization">O</span> NGO / organization</p>
+                <p class="service-map-status" id="service-map-status" role="status" aria-live="polite">Loading map and locations…</p>
+                <p class="service-map-fallback" id="service-map-fallback" hidden>
+                    If locations cannot load here, you can open the same query in
+                    <a id="service-map-query-link" href="https://overpass-turbo.eu/" target="_blank" rel="noopener noreferrer">OpenStreetMap Overpass Turbo</a>.
+                </p>
+                <div id="service-map" class="service-map" role="region" aria-label="Interactive map of health, water, schools, training centres and community organizations in Turkana West"></div>
+                <p class="map-attribution">
+                    Map tiles and location data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a>.
+                </p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h3>Turkana West Connect</h3>
+            <p>Connecting Communities · Reporting Problems · Creating Opportunities</p>
+            <p class="copyright">© 2026 Turkana West Connect</p>
+            <p class="copyright">Designed &amp; developed by Daniel Donny</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" defer></script>
+    <script src="services-map.js" defer></script>
+</body>
+
+</html>

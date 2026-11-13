@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Turkana West Connect</title>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="theme-color" content="#0f766e">
+</head>
+
+<body class="home-page">
+
+
+    <header class="header">
+
+        <div class="container nav">
+
+            <a href="index.html" class="logo">
+                Turkana West <span>Connect</span>
+            </a>
+
+            <div class="nav-actions">
+                <nav class="desktop-nav" aria-label="Main navigation">
+                    <a href="community.html">Community</a>
+                    <a href="report.html">Reports</a>
+                    <a href="opportunities.html">Opportunities</a>
+
+                    <div class="nav-dropdown">
+                        <a href="services.html" class="nav-drop-trigger">Services</a>
+                        <div class="nav-dropdown-menu">
+                            <a href="services.html">All Services</a>
+                            <a href="services.html">Community Support</a>
+                            <a href="services.html">Water & Sanitation</a>
+                            <a href="https://www.unhcr.org/" target="_blank" rel="noreferrer">UNHCR</a>
+                            <a href="https://www.wfp.org/" target="_blank" rel="noreferrer">WFP</a>
+                            <a href="https://www.ilo.org/" target="_blank" rel="noreferrer">ILO</a>
+                            <a href="https://www.rescue.org/" target="_blank" rel="noreferrer">IRC</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <button class="icon-btn notify-btn" id="notifyBtn" aria-label="Notifications">
+
+                    <span class="badge-dot">3</span>
+                </button>
+
+                <div class="lang-switcher" aria-label="Language switcher">
+                    <button class="lang-btn active" data-lang="en" type="button">EN</button>
+                    <button class="lang-btn" data-lang="sw" type="button">SW</button>
+                </div>
+
+                <a href="login.html" class="header-login">Login</a>
+
+                <button class="report-btn" id="openReport">
+                    Report Issue
+                </button>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+                    ☰
+                </button>
+            </div>
+
+            <nav class="nav-menu" id="navMenu" aria-label="Mobile navigation">
+                <a href="community.html"> Community</a>
+                <a href="report.html"> Reports</a>
+                <a href="services.html"> Services</a>
+                <a href="opportunities.html"> Opportunities</a>
+                <div class="mobile-lang-switcher">
+                    <button class="lang-btn active" data-lang="en" type="button">EN</button>
+                    <button class="lang-btn" data-lang="sw" type="button">SW</button>
+                </div>
+                <button id="mobileReport" class="mobile-report-btn">
+                    Report an Issue
+                </button>
+            </nav>
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <span class="badge">
+                        COMMUNITY PLATFORM
+                    </span>
+
+                    <h1>
+                        Connecting Communities.
+                        <span>Creating Opportunities.</span>
+                    </h1>
+
+                    <p>
+                        A digital platform connecting refugee and host
+                        communities with services, opportunities,
+                        organizations and community updates.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="community.html" class="btn primary">
+                            Explore Community
+                        </a>
+
+                        <a href="login.html" class="btn secondary">
+                            Login to Portal
+                        </a>
+
+                        <button class="btn secondary" id="heroReport">
+                            Report an Issue
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- QUICK ACCESS CARD -->
+                <div class="quick-card">
+
+                    <h3>Quick Access</h3>
+
+                    <a href="#reports">
+                        Report a water problem
+                    </a>
+
+                    <a href="opportunities.html">
+                        Find opportunities
+                    </a>
+
+                    <a href="organizations.html">
+                        Find organizations
+                    </a>
+
+                    <a href="community.html">
+                        See community updates
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SEARCH ================= -->
+
+        <section class="container search-section">
+
+            <div class="search-box">
+
+                <input type="text" placeholder="Search your community, services, jobs...">
+
+                <button>
+                    Search
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= COMMUNITY ================= -->
+
+        <section class="container section" id="community">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">
+                        COMMUNITY
+                    </span>
+
+                    <h2>Community Feed</h2>
+                </div>
+
+                <button class="outline-btn">
+                    + Create Post
+                </button>
+
+            </div>
+
+            <div class="community-toolbar">
+                <div class="community-filters">
+                    <button class="filter-chip active">All</button>
+                    <button class="filter-chip">Reports</button>
+                    <button class="filter-chip">Events</button>
+                    <button class="filter-chip">Announcements</button>
+                    <button class="filter-chip">Opportunities</button>
+                </div>
+            </div>
+
+            <div class="community-layout">
+                <div class="community-main">
+                    <article class="post-card">
+
+                        <div class="post-user">
+
+                            <div class="avatar">
+                                CM
+                            </div>
+
+                            <div>
+                                <strong>Community Member</strong>
+
+                                <small>
+                                    2 hours ago · Community
+                                </small>
+                            </div>
+
+                        </div>
+
+
+                        <p class="post-text">
+
+                            There is a damaged water pipe in our area.
+                            Several households are experiencing water problems.
+
+                        </p>
+
+
+                        <div class="post-image">
+
+                            <span>Community Issue Photo</span>
+                        </div>
+
+
+                        <div class="post-actions">
+
+                            <button>❤️ 24</button>
+
+                            <button>💬 8</button>
+
+                            <button>↗ Share</button>
+
+                        </div>
+
+                    </article>
+
+                    <article class="post-card">
+
+                        <div class="post-user">
+
+                            <div class="avatar verified">
+                                ✓
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Verified Organization
+                                </strong>
+
+                                <small>
+                                    Today · Opportunities
+                                </small>
+                            </div>
+
+                        </div>
+
+
+                        <p class="post-text">
+
+                            A new digital skills training opportunity
+                            is available for young people.
+
+                        </p>
+
+
+                        <div class="opportunity-mini">
+
+                            <h3>
+                                Digital Skills Training
+                            </h3>
+
+                            <p>
+                                Youth · Turkana West
+                            </p>
+
+                            <button class="small-btn">
+                                View Opportunity
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                    <article class="post-card">
+
+                        <div class="post-user">
+
+                            <div class="avatar">
+                                ST
+                            </div>
+
+                            <div>
+                                <strong>School Team</strong>
+
+                                <small>
+                                    Yesterday · Announcement
+                                </small>
+                            </div>
+
+                        </div>
+
+                        <p class="post-text">
+                            Primary school classes will resume on Monday after the weekend repairs to the water system.
+                            Parents are encouraged to ensure learners arrive early.
+                        </p>
+
+                        <div class="post-actions">
+                            <button>❤️ 18</button>
+                            <button>💬 4</button>
+                            <button>↗ Share</button>
+                        </div>
+
+                    </article>
+
+                    <article class="post-card">
+
+                        <div class="post-user">
+
+                            <div class="avatar verified">
+                                H
+                            </div>
+
+                            <div>
+                                <strong>Health Clinic</strong>
+
+                                <small>
+                                    3 days ago · Health
+                                </small>
+                            </div>
+
+                        </div>
+
+                        <p class="post-text">
+                            Free maternal health screening will be offered this week at the community clinic.
+                            Residents are encouraged to register early.
+                        </p>
+
+                        <div class="post-actions">
+                            <button>❤️ 31</button>
+                            <button>💬 9</button>
+                            <button>↗ Share</button>
+                        </div>
+
+                    </article>
+                </div>
+
+                <aside class="community-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Trending Topics</h3>
+                        <ul>
+                            <li>Water shortages</li>
+                            <li>School repairs</li>
+                            <li>Employment talks</li>
+                            <li>Clinic services</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Quick Actions</h3>
+                        <button class="sidebar-btn">Report an issue</button>
+                        <button class="sidebar-btn">Share update</button>
+                        <button class="sidebar-btn">Create post</button>
+                    </div>
+                </aside>
+            </div>
+
+        </section>
+
+
+        <!-- ================= REPORTS ================= -->
+
+        <section class="container section" id="reports">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        COMMUNITY ISSUES
+                    </span>
+
+                    <h2>Latest Reports</h2>
+
+                </div>
+
+                <a href="report.html" class="outline-btn" id="viewReports"
+                    style="display: inline-flex; align-items: center; justify-content: center;">
+                    View All
+                </a>
+
+            </div>
+
+
+            <div class="reports-grid">
+
+
+                <div class="report-card">
+
+                    <div class="report-icon">
+
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Broken Water Pipe
+                        </h3>
+
+                        <p>
+                            Community / Zone
+                        </p>
+
+                        <span class="status review">
+                            Under Review
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="report-card">
+
+                    <div class="report-icon">
+
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Damaged Road
+                        </h3>
+
+                        <p>
+                            Community / Zone
+                        </p>
+
+                        <span class="status progress">
+                            Being Addressed
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="report-card">
+
+                    <div class="report-icon">
+
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Broken Solar Light
+                        </h3>
+
+                        <p>
+                            Community / Zone
+                        </p>
+
+                        <span class="status resolved">
+                            Resolved ✓
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SERVICES ================= -->
+
+        <section class="container section" id="services">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        SERVICES
+                    </span>
+
+                    <h2>
+                        Services & Organizations
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="services-grid">
+
+                <div class="service-card">
+                    <span></span>
+                    <h3>Health</h3>
+                    <p>
+                        Find health and community
+                        support services.
+                    </p>
+                </div>
+
+
+                <div class="service-card">
+                    <span></span>
+                    <h3>Water & Sanitation</h3>
+                    <p>
+                        Find relevant services and
+                        report infrastructure issues.
+                    </p>
+                </div>
+
+
+                <div class="service-card organization-card">
+                    <span>🤝</span>
+                    <h3>Organizations</h3>
+                    <p>
+                        Discover verified organizations
+                        and their services.
+                    </p>
+
+                    <div class="organization-menu">
+                        <a href="https://www.unhcr.org/" target="_blank" rel="noreferrer">UNHCR</a>
+                        <a href="https://www.wfp.org/" target="_blank" rel="noreferrer">WFP</a>
+                        <a href="https://www.ilo.org/" target="_blank" rel="noreferrer">ILO</a>
+                        <a href="https://www.rescue.org/" target="_blank" rel="noreferrer">IRC</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container">
+
+            <h3>
+                Turkana West Connect
+            </h3>
+
+            <p>
+                Connecting Communities · Reporting Problems ·
+                Creating Opportunities
+            </p>
+
+            <p class="copyright">
+                © 2026 Turkana West Connect
+            </p>
+            <p class="copyright">Designed &amp; developed by Daniel Donny</p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= REPORT MODAL ================= -->
+
+    <div class="modal" id="reportModal">
+
+        <div class="modal-content">
+
+            <button class="close-btn" id="closeReport">
+
+            </button>
+
+            <h2>
+                Report a Community Issue
+            </h2>
+
+            <p>
+                Help your community report and track
+                local problems.
+            </p>
+
+
+            <form id="reportForm">
+
+                <label>
+                    Issue Type
+                </label>
+
+                <select required>
+
+                    <option value="">
+                        Select an issue
+                    </option>
+
+                    <option>
+                        Water Problem
+                    </option>
+
+                    <option>
+                        Road
+                    </option>
+
+                    <option>
+                        Lighting
+                    </option>
+
+                    <option>
+                        Waste
+                    </option>
+
+                    <option>
+                        Health Facility
+                    </option>
+
+                    <option>
+                        Education Facility
+                    </option>
+
+                    <option>
+                        Other
+                    </option>
+
+                </select>
+
+
+                <label>
+                    Area / Community
+                </label>
+
+                <input type="text" placeholder="Enter community or zone" required>
+
+
+                <label>
+                    Describe the problem
+                </label>
+
+                <textarea placeholder="Explain what happened..." required></textarea>
+
+
+                <label>
+                    Add Photo
+                </label>
+
+                <input type="file" accept="image/*">
+
+
+                <button type="submit" class="btn primary full">
+                    Submit Report
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turkana West Connect | Register</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#0f766e">
+</head>
+
+<body class="auth-page register-page">
+    <div class="auth-shell">
+        <aside class="auth-panel">
+            <a href="index.html" class="logo auth-brand">Turkana West <span>Connect</span></a>
+            <h1>Create your account.</h1>
+            <p>Join the community portal to share updates, submit issues, and discover local opportunities.</p>
+            <ul class="auth-features">
+                <li>Join the local network</li>
+                <li>Submit reports quickly</li>
+                <li>Get updates from partners</li>
+            </ul>
+        </aside>
+
+        <div class="auth-form-wrap">
+            <div class="auth-card">
+                <h2>Create account</h2>
+                <p class="subtext">Fill in your details to get started.</p>
+
+                <form id="registerForm" class="auth-form">
+                    <div class="auth-field">
+                        <label for="registerName">Full name</label>
+                        <input id="registerName" type="text" placeholder="Your full name" required>
+                    </div>
+
+                    <div class="auth-field">
+                        <label for="registerEmail">Email</label>
+                        <input id="registerEmail" type="email" placeholder="you@example.com" required>
+                    </div>
+
+                    <div class="auth-field">
+                        <label for="registerRole">Role</label>
+                        <select id="registerRole" required>
+                            <option value="Resident">Resident</option>
+                            <option value="Volunteer">Volunteer</option>
+                            <option value="Organization">Organization</option>
+                            <option value="Staff">Staff</option>
+                        </select>
+                    </div>
+
+                    <div class="auth-field">
+                        <label for="registerPassword">Password</label>
+                        <input id="registerPassword" type="password" placeholder="Create a password" required>
+                    </div>
+
+                    <button type="submit" class="auth-button">Create account</button>
+                </form>
+
+                <div id="registerMessage" class="auth-message"></div>
+
+                <p class="auth-link-row">
+                    Already have an account? <a href="login.html">Sign in</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
